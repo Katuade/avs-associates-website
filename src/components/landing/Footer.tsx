@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container mx-auto grid grid-cols-1 gap-8 px-4 py-12 md:grid-cols-3 md:px-6">
         <div className="flex flex-col items-center gap-2 text-center md:items-start md:text-left">
           <Link href="#" className="flex items-center gap-2" prefetch={false}>
-            <Logo className="h-10 w-auto" />
+            <Logo />
           </Link>
           <p className="max-w-xs text-sm text-primary-foreground/80">
             Your trusted partner in professional call center services.
