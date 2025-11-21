@@ -1,0 +1,43 @@
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Card } from "@/components/ui/card";
+
+export function About() {
+  const aboutImage = PlaceHolderImages.find((img) => img.id === "about-us-image");
+
+  return (
+    <section id="about" className="w-full bg-card">
+      <div className="container mx-auto grid grid-cols-1 items-center gap-8 px-4 md:grid-cols-2 md:gap-12 md:px-6">
+        <Card className="overflow-hidden rounded-xl shadow-lg">
+          {aboutImage && (
+            <Image
+              src={aboutImage.imageUrl}
+              alt={aboutImage.description}
+              width={800}
+              height={600}
+              className="aspect-video w-full object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+              data-ai-hint={aboutImage.imageHint}
+            />
+          )}
+        </Card>
+        <div className="space-y-4 text-center md:text-left">
+          <h2 className="text-3xl font-bold tracking-tighter text-destructive sm:text-4xl md:text-5xl">
+            About AVS Associates
+          </h2>
+          <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            Founded on the principle of exceptional service, AVS Associates has
+            grown into a leading provider of comprehensive call center
+            solutions. Our mission is to empower businesses by managing their
+            customer interactions with professionalism and efficiency, allowing
+            them to focus on their core operations.
+          </p>
+          <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            Our team is our greatest asset. Comprised of experienced, highly-trained
+            professionals, we are dedicated to representing your brand with the
+            same passion and commitment as you would.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
