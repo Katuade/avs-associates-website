@@ -44,7 +44,7 @@ export function Clients() {
             </li>
           ))}
         </ul>
-        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+        <ul className="mb-8 flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
             aria-hidden="true">
           {clients.map((client, index) => (
             <li key={index}>
