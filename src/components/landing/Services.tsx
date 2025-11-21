@@ -3,34 +3,62 @@ import {
   CardHeader,
   CardTitle,
   CardContent,
-  CardDescription,
 } from "@/components/ui/card";
-import { Headset, MessageSquare, PhoneCall, Users2 } from "lucide-react";
+import {
+  CheckCircle,
+  Phone,
+  Database,
+  FileCheck,
+  Headset,
+  Users,
+} from "lucide-react";
 
-const services = [
+const serviceCategories = [
   {
+    title: "Customer Care",
     icon: <Headset className="h-8 w-8 text-accent" />,
-    title: "Inbound Call Handling",
-    description:
-      "Professional, friendly agents to handle your customer queries, support requests, and order placements 24/7.",
+    items: [
+      "Inbound and outbound calls",
+      "Payment reminders",
+      "Lead generation and fulfillment",
+      "Customer retention & win-back",
+      "Cross and up-selling",
+      "Welcome and reminder calls",
+    ],
   },
   {
-    icon: <PhoneCall className="h-8 w-8 text-accent" />,
-    title: "Outbound Campaigns",
-    description:
-      "Targeted outbound calls for telemarketing, lead generation, customer surveys, and appointment setting.",
+    title: "Collection & Recovery",
+    icon: <Phone className="h-8 w-8 text-accent" />,
+    items: [
+      "Soft bucket collection calls",
+      "Proactive reminder calls",
+      "Tele-collection for financial products",
+      "Post-due-date (PDD) collections",
+      "Dunning services",
+      "Skip tracing and validation",
+    ],
   },
   {
-    icon: <MessageSquare className="h-8 w-8 text-accent" />,
-    title: "Multi-Channel Support",
-    description:
-      "Seamless customer support across various channels including email, live chat, and social media.",
+    title: "Verification Services",
+    icon: <FileCheck className="h-8 w-8 text-accent" />,
+    items: [
+      "Residence and business verification",
+      "Telephone and document verification",
+      "Physical customer profiling",
+      "Negative database verification",
+      "Credit verification reports",
+    ],
   },
   {
-    icon: <Users2 className="h-8 w-8 text-accent" />,
-    title: "Technical Support",
-    description:
-      "Tier 1 and Tier 2 technical support from trained experts to resolve product and service issues efficiently.",
+    title: "Support & BPO",
+    icon: <Users className="h-8 w-8 text-accent" />,
+    items: [
+      "End-to-end business process solutions",
+      "Customer relationship management",
+      "Data entry and billing solutions",
+      "Custom workstation and resource provisioning",
+      "Staggered & night process calling",
+    ],
   },
 ];
 
@@ -43,23 +71,32 @@ export function Services() {
             Our Comprehensive Services
           </h2>
           <p className="animate-fade-in-up max-w-[900px] text-muted-foreground [animation-delay:0.2s] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            We offer a full suite of call center solutions tailored to meet the
-            unique needs of your business.
+            We offer a full suite of call center and BPO solutions designed to
+            integrate seamlessly with your operations and drive growth.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {services.map((service, index) => (
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {serviceCategories.map((category, index) => (
             <Card
-              key={index}
-              className="animate-fade-in-up flex flex-col text-center opacity-0 transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2"
+              key={category.title}
+              className="animate-fade-in-up flex flex-col opacity-0 transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2"
               style={{ animationDelay: `${0.4 + index * 0.1}s` }}
             >
-              <CardHeader className="items-center">
-                {service.icon}
-                <CardTitle>{service.title}</CardTitle>
+              <CardHeader className="items-center text-center">
+                {category.icon}
+                <CardTitle>{category.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription>{service.description}</CardDescription>
+                <ul className="space-y-3 text-left">
+                  {category.items.map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <CheckCircle className="mt-1 h-4 w-4 flex-shrink-0 text-green-500" />
+                      <span className="text-sm text-muted-foreground">
+                        {item}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
               </CardContent>
             </Card>
           ))}

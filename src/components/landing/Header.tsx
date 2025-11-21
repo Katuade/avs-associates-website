@@ -14,6 +14,8 @@ import { Logo } from "./Logo";
 const navLinks = [
   { href: "#about", label: "About Us" },
   { href: "#services", label: "Our Services" },
+  { href: "#infrastructure", label: "Infrastructure" },
+  { href: "#why-us", label: "Why Us" },
   { href: "#clients", label: "Our Clients" },
   { href: "#contact", label: "Contact Us" },
 ];
