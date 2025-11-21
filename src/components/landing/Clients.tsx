@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const clients = [
   { src: "/lic_logo.svg", alt: "LIC Housing Finance Logo" },
-  { src: "/protium_logo.svg", alt: "Protium Logo" },
+  { src: "/protium_logo.png", alt: "Protium Logo" },
   { src: "/mobicule_logo.svg", alt: "Mobicule Logo" },
   { src: "/au_logo.png", alt: "AU Small Finance Bank Logo" },
   { src: "/sbi_cards_logo.png", alt: "SBI Cards Logo" },
@@ -11,10 +11,10 @@ const clients = [
   { src: "/idbi_logo.svg", alt: "IDBI Bank Logo" },
   { src: "/abfl_logo.jpeg", alt: "Aditya Birla Finance Logo" },
   { src: "/kotak_logo.svg", alt: "Kotak Mahindra Bank Logo" },
-  { src: "/icici_logo.svg", alt: "ICICI Bank Logo" },
+  { src: "/icici_logo.png", alt: "ICICI Bank Logo" },
   { src: "/hdfc_logo.svg", alt: "HDFC Bank Logo" },
   { src: "/idfc_logo.svg", alt: "IDFC First Bank Logo" },
-  { src: "/fullerton_logo.svg", alt: "Fullerton India Logo" },
+  { src: "/fullerton_logo.png", alt: "Fullerton India Logo" },
   { src: "/bajaj_logo.svg", alt: "Bajaj Finserv Logo" },
 ];
 
