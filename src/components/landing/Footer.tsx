@@ -4,7 +4,7 @@ import { BigLogo } from "./BigLogo";
 
 export function Footer() {
   return (
-    <footer id="contact" className="w-full bg-card text-foreground">
+    <footer id="contact" className="w-full bg-primary text-foreground">
       <div className="container mx-auto grid grid-cols-1 gap-8 px-4 py-12 md:grid-cols-3 md:px-6">
         <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
           <Link href="#" className="flex items-center gap-2" prefetch={false}>
