@@ -18,7 +18,7 @@ export default {
     extend: {
       fontFamily: {
         body: ["'PT Sans'", "sans-serif"],
-        headline: ["'Playfair Display'", "serif"],
+        headline: ["'Montserrat'", "sans-serif"],
         code: ["monospace"],
       },
       colors: {
@@ -129,6 +129,10 @@ export default {
             transform: "translateX(0)",
           },
         },
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -137,6 +141,7 @@ export default {
         "fade-in-up": "fade-in-up 0.6s ease-in-out forwards",
         "fade-in-left": "fade-in-left 0.6s ease-in-out forwards",
         "fade-in-right": "fade-in-right 0.6s ease-in-out forwards",
+        "infinite-scroll": "infinite-scroll 40s linear infinite",
       },
     },
   },
