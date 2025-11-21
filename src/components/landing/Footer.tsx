@@ -1,11 +1,11 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import { BigLogo } from "./BigLogo";
 
 export function Footer() {
   return (
     <footer id="contact" className="w-full bg-primary text-primary-foreground">
-      <div className="container mx-auto grid grid-cols-1 gap-8 px-4 py-12 md:grid-cols-3 md:px-6">
+      <div className="container mx-auto grid grid-cols-1 gap-8 px-4 py-12 md:grid-cols-4 md:px-6">
         <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
           <Link href="#" className="flex items-center gap-2" prefetch={false}>
             <BigLogo />
@@ -17,7 +17,7 @@ export function Footer() {
             you and perform to your fullest satisfaction.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-2 md:col-span-2 md:grid-cols-3 md:text-left">
+        <div className="grid grid-cols-1 gap-8 text-center sm:grid-cols-2 md:col-span-3 md:grid-cols-3 md:text-left">
           <div className="flex flex-col items-center gap-2 md:items-start">
             <div className="flex items-center gap-2">
               <MapPin className="h-5 w-5" />
@@ -44,6 +44,25 @@ export function Footer() {
             <p className="text-sm text-primary-foreground/80">
               contact@avsassociates.com
             </p>
+          </div>
+          <div className="col-span-1 flex flex-col items-center gap-2 sm:col-span-2 md:col-span-3 md:items-start">
+            <div className="flex items-center gap-2">
+              <h3 className="font-semibold">Keep in touch with us</h3>
+            </div>
+            <div className="flex gap-4">
+              <Link href="#" prefetch={false}>
+                <Linkedin className="h-6 w-6 text-primary-foreground/80 transition-colors hover:text-primary-foreground" />
+                <span className="sr-only">LinkedIn</span>
+              </Link>
+              <Link href="#" prefetch={false}>
+                <Instagram className="h-6 w-6 text-primary-foreground/80 transition-colors hover:text-primary-foreground" />
+                <span className="sr-only">Instagram</span>
+              </Link>
+              <Link href="#" prefetch={false}>
+                <Facebook className="h-6 w-6 text-primary-foreground/80 transition-colors hover:text-primary-foreground" />
+                <span className="sr-only">Facebook</span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
