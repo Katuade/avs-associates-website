@@ -20,16 +20,16 @@ export function About() {
             About AVS Associates
           </h2>
           <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Founded on the principle of exceptional service, AVS Associates has
-            grown into a leading provider of comprehensive call center
-            solutions. Our mission is to empower businesses by managing their
-            customer interactions with professionalism and efficiency, allowing
-            them to focus on their core operations.
+            AVS Associates was incorporated in January, 2009 with a view to
+            create a niche in the Sales, recovery and collection industry with a
+            prime focus to serve national / multinational / financial
+            institution and other NBFC.
           </p>
           <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Our team is our greatest asset. Comprised of experienced, highly-trained
-            professionals, we are dedicated to representing your brand with the
-            same passion and commitment as you would.
+            The Proprietor Mr. Vikram Gadgil has behind him a vast experience of
+            eleven years plus in different multinational banks like Standard
+            Chartered Bank, Citi financial and HSBC and has worked closely on
+            field for recovery, collection and repossession to name a few.
           </p>
         </div>
       </div>
