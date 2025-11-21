@@ -1,5 +1,6 @@
-import { Building2, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
+import { Logo } from "./Logo";
 
 export function Footer() {
   return (
@@ -7,8 +8,7 @@ export function Footer() {
       <div className="container mx-auto grid grid-cols-1 gap-8 px-4 py-12 md:grid-cols-3 md:px-6">
         <div className="flex flex-col items-center gap-2 text-center md:items-start md:text-left">
           <Link href="#" className="flex items-center gap-2" prefetch={false}>
-            <Building2 className="h-6 w-6" />
-            <span className="text-xl font-bold font-headline">AVS Associates</span>
+            <Logo className="h-10 w-auto" />
           </Link>
           <p className="max-w-xs text-sm text-primary-foreground/80">
             Your trusted partner in professional call center services.
@@ -38,7 +38,9 @@ export function Footer() {
               <Mail className="h-5 w-5" />
               <h3 className="font-semibold">Email</h3>
             </div>
-            <p className="text-sm text-primary-foreground/80">contact@avsassociates.com</p>
+            <p className="text-sm text-primary-foreground/80">
+              contact@avsassociates.com
+            </p>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Building2, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -9,6 +9,7 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import { Logo } from "./Logo";
 
 const navLinks = [
   { href: "#about", label: "About Us" },
@@ -26,10 +27,7 @@ export function Header() {
           className="mr-6 flex items-center gap-2"
           prefetch={false}
         >
-          <Building2 className="h-6 w-6 text-primary" />
-          <span className="hidden font-bold sm:inline-block font-headline">
-            AVS Associates
-          </span>
+          <Logo className="h-8 w-auto text-primary" />
         </Link>
         <nav className="hidden flex-1 items-center gap-6 text-sm font-medium md:flex">
           {navLinks.map((link) => (
@@ -58,8 +56,7 @@ export function Header() {
                   className="mb-4 flex items-center gap-2"
                   prefetch={false}
                 >
-                  <Building2 className="h-6 w-6 text-primary" />
-                  <span className="font-bold font-headline">AVS Associates</span>
+                  <Logo className="h-8 w-auto text-primary" />
                 </Link>
                 {navLinks.map((link) => (
                   <SheetClose key={link.href} asChild>

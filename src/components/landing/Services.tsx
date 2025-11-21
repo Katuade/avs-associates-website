@@ -9,25 +9,25 @@ import { Headset, MessageSquare, PhoneCall, Users2 } from "lucide-react";
 
 const services = [
   {
-    icon: <Headset className="h-8 w-8 text-primary" />,
+    icon: <Headset className="h-8 w-8 text-accent" />,
     title: "Inbound Call Handling",
     description:
       "Professional, friendly agents to handle your customer queries, support requests, and order placements 24/7.",
   },
   {
-    icon: <PhoneCall className="h-8 w-8 text-primary" />,
+    icon: <PhoneCall className="h-8 w-8 text-accent" />,
     title: "Outbound Campaigns",
     description:
       "Targeted outbound calls for telemarketing, lead generation, customer surveys, and appointment setting.",
   },
   {
-    icon: <MessageSquare className="h-8 w-8 text-primary" />,
+    icon: <MessageSquare className="h-8 w-8 text-accent" />,
     title: "Multi-Channel Support",
     description:
       "Seamless customer support across various channels including email, live chat, and social media.",
   },
   {
-    icon: <Users2 className="h-8 w-8 text-primary" />,
+    icon: <Users2 className="h-8 w-8 text-accent" />,
     title: "Technical Support",
     description:
       "Tier 1 and Tier 2 technical support from trained experts to resolve product and service issues efficiently.",
