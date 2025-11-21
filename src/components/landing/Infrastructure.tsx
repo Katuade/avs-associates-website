@@ -75,8 +75,8 @@ export function Infrastructure() {
           </div>
           <Card className="hidden overflow-hidden rounded-xl shadow-lg lg:block">
             <Image
-              src="https://images.unsplash.com/photo-1587691592099-4083681565e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYWxsJTIwY2VudGVyfGVufDB8fHx8MTc2Mzc3OTM2OXww&ixlib=rb-4.1.0&q=80&w=1080"
-              alt="Call center agents working at their desks"
+              src="/callcentre_girl.jpg"
+              alt="Call center agents"
               width={800}
               height={700}
               className="h-full w-full object-cover"
