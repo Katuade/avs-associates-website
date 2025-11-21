@@ -39,10 +39,10 @@ export function Services() {
     <section id="services" className="w-full">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-12 flex flex-col items-center justify-center space-y-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter text-destructive sm:text-5xl">
+          <h2 className="animate-fade-in-up text-3xl font-bold tracking-tighter text-destructive sm:text-5xl">
             Our Comprehensive Services
           </h2>
-          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <p className="animate-fade-in-up max-w-[900px] text-muted-foreground [animation-delay:0.2s] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             We offer a full suite of call center solutions tailored to meet the
             unique needs of your business.
           </p>
@@ -51,7 +51,8 @@ export function Services() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="flex flex-col text-center transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2"
+              className="animate-fade-in-up flex flex-col text-center opacity-0 transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2"
+              style={{ animationDelay: `${0.4 + index * 0.1}s` }}
             >
               <CardHeader className="items-center">
                 {service.icon}
