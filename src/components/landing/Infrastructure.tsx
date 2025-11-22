@@ -11,32 +11,32 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const features = [
   {
-    icon: <Building className="h-8 w-8 text-primary-foreground" />,
+    icon: <Building className="h-8 w-8 text-primary" />,
     title: "2200+ sq.ft. Office Space",
     description: "Modern, cheerful, and bright interiors.",
   },
   {
-    icon: <Computer className="h-8 w-8 text-primary-foreground" />,
+    icon: <Computer className="h-8 w-8 text-primary" />,
     title: "85+ Networked Workstations",
     description: "Fully equipped for call center operations.",
   },
   {
-    icon: <Network className="h-8 w-8 text-primary-foreground" />,
+    icon: <Network className="h-8 w-8 text-primary" />,
     title: "High-Speed Leased Lines",
     description: "Optic and wireless for uninterrupted connectivity.",
   },
   {
-    icon: <Server className="h-8 w-8 text-primary-foreground" />,
+    icon: <Server className="h-8 w-8 text-primary" />,
     title: "High-End Xenon Servers",
     description: "With RAID technology and redundancy at every point.",
   },
   {
-    icon: <Users className="h-8 w-8 text-primary-foreground" />,
+    icon: <Users className="h-8 w-8 text-primary" />,
     title: "200+ Trained Professionals",
     description: "Including 80 Telecallers and 125 Field Executives.",
   },
   {
-    icon: <Wind className="h-8 w-8 text-primary-foreground" />,
+    icon: <Wind className="h-8 w-8 text-primary" />,
     title: "Modern Facilities",
     description:
       "Fully air-conditioned, with conference rooms and cafeteria.",
@@ -74,19 +74,19 @@ export function Infrastructure() {
           {features.map((feature, index) => (
             <Card
               key={feature.title}
-              className="animate-fade-in-up flex flex-col items-center bg-primary text-center text-primary-foreground opacity-0 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
+              className="animate-fade-in-up flex flex-col items-center bg-muted text-center text-foreground opacity-0 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader>
                 <div className="mb-4 flex justify-center">
-                  <div className="rounded-full bg-primary-foreground/10 p-4">
+                  <div className="rounded-full bg-primary/10 p-4">
                     {feature.icon}
                   </div>
                 </div>
-                <CardTitle>{feature.title}</CardTitle>
+                <CardTitle className="text-foreground">{feature.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-primary-foreground/80">
+                <p className="text-sm text-muted-foreground">
                   {feature.description}
                 </p>
               </CardContent>
