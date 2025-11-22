@@ -11,22 +11,29 @@ import {
   FileCheck,
   Users,
 } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
-const serviceCategories = [
+type Service = {
+  title: string;
+  icon: LucideIcon;
+  items: string[];
+};
+
+const serviceCategories: Service[] = [
   {
     title: "Inbound Services",
-    icon: <PhoneIncoming className="h-8 w-8 text-accent" />,
+    icon: PhoneIncoming,
     items: [
       "Handling incoming customer queries",
       "Welcome calls and information assistance",
       "Service quality and satisfaction management",
       "Customer retention and churn management",
-      "Complaint resolution and issue handling"
+      "Complaint resolution and issue handling",
     ],
   },
   {
     title: "Outbound Services",
-    icon: <PhoneOutgoing className="h-8 w-8 text-accent" />,
+    icon: PhoneOutgoing,
     items: [
       "Payment and service reminders (due date / proactive)",
       "Lead generation, prospecting & customer acquisition",
@@ -37,7 +44,7 @@ const serviceCategories = [
   },
   {
     title: "Verification Services",
-    icon: <FileCheck className="h-8 w-8 text-accent" />,
+    icon: FileCheck,
     items: [
       "Residence and business verification",
       "Telephone and document verification",
@@ -48,7 +55,7 @@ const serviceCategories = [
   },
   {
     title: "Support & BPO",
-    icon: <Users className="h-8 w-8 text-accent" />,
+    icon: Users,
     items: [
       "End-to-end business process solutions",
       "Customer relationship management",
@@ -67,7 +74,7 @@ export function Services() {
           <h2 className="animate-fade-in-up text-3xl font-bold tracking-tighter text-destructive sm:text-5xl">
             Our Comprehensive Services
           </h2>
-          <p className="animate-fade-in-up max-w-[900px] text-muted-foreground [animation-delay:0.2s] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <p className="animate-fade-in-up max-w-[900px] text-muted-foreground [animation-delay:0.2s] md:text-xl/relaxed">
             We offer a full suite of call center and BPO solutions designed to
             integrate seamlessly with your operations and drive growth.
           </p>
@@ -80,10 +87,10 @@ export function Services() {
               style={{ animationDelay: `${0.4 + index * 0.1}s` }}
             >
               <CardHeader className="items-center text-center">
-                {category.icon}
+                <category.icon className="h-8 w-8 text-accent" />
                 <CardTitle>{category.title}</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-1">
                 <ul className="space-y-3 text-left">
                   {category.items.map((item) => (
                     <li key={item} className="flex items-start gap-3">

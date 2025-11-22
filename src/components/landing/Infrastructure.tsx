@@ -11,32 +11,32 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const features = [
   {
-    icon: <Building className="h-8 w-8 text-primary" />,
+    icon: Building,
     title: "2200+ sq.ft. Office Space",
     description: "Modern, cheerful, and bright interiors.",
   },
   {
-    icon: <Computer className="h-8 w-8 text-primary" />,
+    icon: Computer,
     title: "185+ Networked Workstations",
     description: "Fully equipped for call center operations.",
   },
   {
-    icon: <Network className="h-8 w-8 text-primary" />,
+    icon: Network,
     title: "High-Speed Leased Lines",
     description: "Optic and wireless for uninterrupted connectivity.",
   },
   {
-    icon: <Server className="h-8 w-8 text-primary" />,
+    icon: Server,
     title: "Expanding Footprint",
     description: "Operational hubs in Kalyan, Surat and other strategic locations",
   },
   {
-    icon: <Users className="h-8 w-8 text-primary" />,
+    icon: Users,
     title: "300+ Trained Professionals",
     description: "Including 80 Telecallers and 125 Field Executives.",
   },
   {
-    icon: <Wind className="h-8 w-8 text-primary" />,
+    icon: Wind,
     title: "Modern Facilities",
     description:
       "Fully air-conditioned, with conference rooms and cafeteria.",
@@ -62,7 +62,7 @@ export function Infrastructure() {
           <Card className="overflow-hidden rounded-xl shadow-lg">
             <Image
               src="/callcentre_girl.jpg"
-              alt="Call center agents"
+              alt="A smiling call center agent wearing a headset."
               width={800}
               height={700}
               className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
@@ -79,8 +79,8 @@ export function Infrastructure() {
             >
               <CardHeader>
                 <div className="mb-4 flex justify-center">
-                  <div className="rounded-full bg-primary/10 p-4">
-                    {feature.icon}
+                  <div className="rounded-full bg-background p-4">
+                    <feature.icon className="h-8 w-8 text-primary" />
                   </div>
                 </div>
                 <CardTitle className="text-foreground">{feature.title}</CardTitle>

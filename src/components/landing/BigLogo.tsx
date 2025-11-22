@@ -9,6 +9,7 @@ export function BigLogo({ className }: { className?: string }) {
         alt="AVS Associates Logo"
         fill
         className="object-contain"
+        priority
       />
     </div>
   );

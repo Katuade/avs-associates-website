@@ -19,17 +19,18 @@ export function About() {
           <h2 className="text-3xl font-bold tracking-tighter text-destructive sm:text-4xl md:text-5xl">
             About AVS Associates
           </h2>
-          <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-          Founded in January 2009, AVS Associates is a trusted provider of contact-center
-           and business support services for leading banks, NBFCs, and corporates across 
-           India. We specialize in delivering seamless inbound and outbound communication 
-           solutions that enhance customer experience and strengthen business performance.
+          <p className="text-muted-foreground md:text-xl/relaxed">
+            Founded in January 2009, AVS Associates is a trusted provider of
+            contact-center and business support services for leading banks,
+            NBFCs, and corporates across India. We specialize in delivering
+            seamless inbound and outbound communication solutions that enhance
+            customer experience and strengthen business performance.
           </p>
-          <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-          Under the leadership of Mr. Vikram Gadgil, who brings over a decade of experience
-           from multinational banks such as Standard Chartered, CitiFinancial, and HSBC,
-            AVS Associates has grown into a reliable partner known for professionalism,
-             efficiency, and service quality.
+          <p className="text-muted-foreground md:text-xl/relaxed">
+            Under the leadership of Mr. Vikram Gadgil, who brings over a decade
+            of experience from multinational banks such as Standard Chartered,
+            CitiFinancial, and HSBC, AVS Associates has grown into a reliable
+            partner known for professionalism, efficiency, and service quality.
           </p>
         </div>
       </div>

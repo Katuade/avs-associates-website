@@ -27,28 +27,40 @@ export function Clients() {
             <h2 className="text-3xl font-bold tracking-tighter text-destructive sm:text-5xl">
               Our Valued Clients
             </h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
               We are proud to be associated with esteemed national and
               multinational banks and financial institutions in India.
             </p>
           </div>
         </div>
       </div>
-      <div
-        className="mt-12 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-        <ul
-          className=" mb-10 flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-          {clients.map((client, index) => (
-            <li key={index}>
-              <Image src={client.src} alt={client.alt} width={158} height={48} className="object-contain" />
+      <div className="mt-12 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 animate-infinite-scroll">
+          {clients.map((client) => (
+            <li key={client.alt}>
+              <Image
+                src={client.src}
+                alt={client.alt}
+                width={158}
+                height={48}
+                className="object-contain"
+              />
             </li>
           ))}
         </ul>
-        <ul className="mb-8 flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
-            aria-hidden="true">
-          {clients.map((client, index) => (
-            <li key={index}>
-              <Image src={client.src} alt={client.alt} width={158} height={48} className="object-contain" />
+        <ul
+          className="flex items-center justify-center md:justify-start [&_li]:mx-8 animate-infinite-scroll"
+          aria-hidden="true"
+        >
+          {clients.map((client) => (
+            <li key={client.alt}>
+              <Image
+                src={client.src}
+                alt={client.alt}
+                width={158}
+                height={48}
+                className="object-contain"
+              />
             </li>
           ))}
         </ul>

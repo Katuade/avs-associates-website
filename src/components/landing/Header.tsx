@@ -24,11 +24,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/60">
       <div className="container mx-auto flex h-16 items-center px-4 md:px-6">
-        <Link
-          href="#"
-          className="mr-6 flex items-center gap-2"
-          prefetch={false}
-        >
+        <Link href="#" className="mr-6 flex items-center gap-2" prefetch={false}>
           <Logo />
         </Link>
         <nav className="hidden flex-1 items-center gap-6 text-sm md:flex">
@@ -43,7 +39,7 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <div className="flex flex-1 items-center justify-end gap-4 md:hidden">
+        <div className="flex flex-1 items-center justify-end md:hidden">
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon">
@@ -60,17 +56,19 @@ export function Header() {
                 >
                   <Logo />
                 </Link>
-                {navLinks.map((link) => (
-                  <SheetClose key={link.href} asChild>
-                    <Link
-                      href={link.href}
-                      className="block rounded-md px-3 py-2 text-base font-semibold text-foreground/80 hover:bg-accent hover:text-accent-foreground"
-                      prefetch={false}
-                    >
-                      {link.label}
-                    </Link>
-                  </SheetClose>
-                ))}
+                <nav className="grid gap-2">
+                  {navLinks.map((link) => (
+                    <SheetClose key={link.href} asChild>
+                      <Link
+                        href={link.href}
+                        className="block rounded-md px-3 py-2 text-base font-semibold text-foreground/80 hover:bg-accent hover:text-accent-foreground"
+                        prefetch={false}
+                      >
+                        {link.label}
+                      </Link>
+                    </SheetClose>
+                  ))}
+                </nav>
               </div>
             </SheetContent>
           </Sheet>

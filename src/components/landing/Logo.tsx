@@ -9,6 +9,7 @@ export function Logo({ className }: { className?: string }) {
         alt="AVS Associates Logo"
         fill
         className="object-contain"
+        priority
       />
     </div>
   );

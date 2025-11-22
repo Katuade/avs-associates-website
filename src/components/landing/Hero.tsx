@@ -4,10 +4,13 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section id="home" className="relative w-full h-[80vh] flex items-center justify-center text-center text-white">
+    <section
+      id="home"
+      className="relative w-full h-[80vh] flex items-center justify-center text-center text-white"
+    >
       <Image
         src="/callcentre_agents.jpg"
-        alt="A team of call center agents working"
+        alt="A team of call center agents working in a modern office."
         fill
         className="object-cover"
         priority
@@ -19,17 +22,22 @@ export function Hero() {
           <h1 className="animate-fade-in-up text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl [animation-delay:0.2s]">
             Elevating Customer Connections
           </h1>
-          <p className="animate-fade-in-up text-lg text-white/80 md:text-xl [animation-delay:0.4s]">
-            AVS Associates provides world-class call center services designed for
-            trust and sophistication. Let us be the professional voice of your
-            brand.
+          <p className="animate-fade-in-up mx-auto max-w-[700px] text-lg text-white/80 md:text-xl [animation-delay:0.4s]">
+            AVS Associates provides world-class call center services designed
+            for trust and sophistication. Let us be the professional voice of
+            your brand.
           </p>
         </div>
         <div className="animate-fade-in-up space-x-4 [animation-delay:0.6s]">
           <Button asChild size="lg">
             <Link href="#contact">Get in Touch</Link>
           </Button>
-          <Button asChild variant="outline" size="lg" className="bg-transparent text-white border-white hover:bg-white hover:text-primary">
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="bg-transparent text-white border-white hover:bg-white hover:text-primary"
+          >
             <Link href="#services">Our Services</Link>
           </Button>
         </div>
