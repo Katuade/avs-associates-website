@@ -20,16 +20,16 @@ export function About() {
             About AVS Associates
           </h2>
           <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            AVS Associates was incorporated in January, 2009 with a view to
-            create a niche in the Sales, recovery and collection industry with a
-            prime focus to serve national / multinational / financial
-            institution and other NBFC.
+          Founded in January 2009, AVS Associates is a trusted provider of contact-center
+           and business support services for leading banks, NBFCs, and corporates across 
+           India. We specialize in delivering seamless inbound and outbound communication 
+           solutions that enhance customer experience and strengthen business performance.
           </p>
           <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            The Proprietor Mr. Vikram Gadgil has behind him a vast experience of
-            eleven years plus in different multinational banks like Standard
-            Chartered Bank, Citi financial and HSBC and has worked closely on
-            field for recovery, collection and repossession to name a few.
+          Under the leadership of Mr. Vikram Gadgil, who brings over a decade of experience
+           from multinational banks such as Standard Chartered, CitiFinancial, and HSBC,
+            AVS Associates has grown into a reliable partner known for professionalism,
+             efficiency, and service quality.
           </p>
         </div>
       </div>

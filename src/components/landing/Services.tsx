@@ -6,36 +6,32 @@ import {
 } from "@/components/ui/card";
 import {
   CheckCircle,
-  Phone,
-  Database,
+  PhoneIncoming,
+  PhoneOutgoing,
   FileCheck,
-  Headset,
   Users,
 } from "lucide-react";
 
 const serviceCategories = [
   {
-    title: "Customer Care",
-    icon: <Headset className="h-8 w-8 text-accent" />,
+    title: "Inbound Services",
+    icon: <PhoneIncoming className="h-8 w-8 text-accent" />,
     items: [
-      "Inbound and outbound calls",
-      "Payment reminders",
-      "Lead generation and fulfillment",
-      "Customer retention & win-back",
-      "Cross and up-selling",
-      "Welcome and reminder calls",
+      "Handling incoming customer queries",
+      "Welcome calls and information assistance",
+      "Service quality and satisfaction management",
+      "Customer retention and churn management",
     ],
   },
   {
-    title: "Collection & Recovery",
-    icon: <Phone className="h-8 w-8 text-accent" />,
+    title: "Outbound Services",
+    icon: <PhoneOutgoing className="h-8 w-8 text-accent" />,
     items: [
-      "Soft bucket collection calls",
-      "Proactive reminder calls",
-      "Tele-collection for financial products",
-      "Post-due-date (PDD) collections",
-      "Dunning services",
-      "Skip tracing and validation",
+      "Payment and service reminders (due date / proactive)",
+      "Lead generation, prospecting & customer acquisition",
+      "Cross-selling and up-selling to existing customers",
+      "Conversions, win-back, and attrition management",
+      "Soft customer follow-ups and call-back support",
     ],
   },
   {

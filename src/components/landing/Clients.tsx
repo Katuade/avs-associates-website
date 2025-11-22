@@ -37,7 +37,7 @@ export function Clients() {
       <div
         className="mt-12 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
         <ul
-          className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+          className=" mb-10 flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
           {clients.map((client, index) => (
             <li key={index}>
               <Image src={client.src} alt={client.alt} width={158} height={48} className="object-contain" />
