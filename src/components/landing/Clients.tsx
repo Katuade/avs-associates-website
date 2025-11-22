@@ -10,12 +10,12 @@ const clients = [
   { src: "/hsbc_logo.svg", alt: "HSBC Logo" },
   { src: "/idbi_logo.svg", alt: "IDBI Bank Logo" },
   { src: "/abfl_logo.jpeg", alt: "Aditya Birla Finance Logo" },
+  { src: "/icici_bank_logo.png", alt: "ICICI Bank Logo" },
   { src: "/kotak_logo.svg", alt: "Kotak Mahindra Bank Logo" },
-  { src: "/icici_logo.png", alt: "ICICI Bank Logo" },
-  { src: "/hdfc_logo.svg", alt: "HDFC Bank Logo" },
+  { src: "/hdfc_bank_logo.svg", alt: "HDFC Bank Logo" },
   { src: "/idfc_logo.svg", alt: "IDFC First Bank Logo" },
   { src: "/fullerton_logo.png", alt: "Fullerton India Logo" },
-  { src: "/bajaj_logo.svg", alt: "Bajaj Finserv Logo" },
+  { src: "/bajaj_logo.png", alt: "Bajaj Finserv Logo" },
 ];
 
 export function Clients() {

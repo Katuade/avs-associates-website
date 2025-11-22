@@ -45,7 +45,7 @@ export function Footer() {
                 <h3 className="font-semibold">Email</h3>
               </div>
               <p className="text-sm text-primary-foreground/80">
-                contact@avsassociates.com
+                contact@avsassociates.asia
               </p>
             </div>
             <div className="flex flex-col items-center gap-2 md:items-start">
@@ -75,7 +75,7 @@ export function Footer() {
           </p>
           <p className="max-w-md text-xs text-foreground/60">
             In case of any further queries please feel free to contact the
-            undersigned for more information.
+            undersigned.
           </p>
         </div>
       </div>

@@ -21,6 +21,7 @@ const serviceCategories = [
       "Welcome calls and information assistance",
       "Service quality and satisfaction management",
       "Customer retention and churn management",
+      "Complaint resolution and issue handling"
     ],
   },
   {
