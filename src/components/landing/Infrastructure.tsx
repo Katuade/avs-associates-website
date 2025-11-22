@@ -17,7 +17,7 @@ const features = [
   },
   {
     icon: <Computer className="h-8 w-8 text-primary" />,
-    title: "85+ Networked Workstations",
+    title: "185+ Networked Workstations",
     description: "Fully equipped for call center operations.",
   },
   {
@@ -27,12 +27,12 @@ const features = [
   },
   {
     icon: <Server className="h-8 w-8 text-primary" />,
-    title: "High-End Xenon Servers",
-    description: "With RAID technology and redundancy at every point.",
+    title: "Expanding Footprint",
+    description: "Operational hubs in Kalyan, Surat and other strategic locations",
   },
   {
     icon: <Users className="h-8 w-8 text-primary" />,
-    title: "200+ Trained Professionals",
+    title: "300+ Trained Professionals",
     description: "Including 80 Telecallers and 125 Field Executives.",
   },
   {
