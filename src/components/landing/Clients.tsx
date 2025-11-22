@@ -35,7 +35,7 @@ export function Clients() {
         </div>
       </div>
       <div className="mt-12 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 animate-infinite-scroll">
+        <ul className="flex items-center justify-center animate-infinite-scroll md:justify-start [&_li]:mx-8">
           {clients.map((client) => (
             <li key={client.alt}>
               <Image
@@ -49,7 +49,7 @@ export function Clients() {
           ))}
         </ul>
         <ul
-          className="flex items-center justify-center md:justify-start [&_li]:mx-8 animate-infinite-scroll"
+          className="flex items-center justify-center animate-infinite-scroll md:justify-start [&_li]:mx-8"
           aria-hidden="true"
         >
           {clients.map((client) => (
