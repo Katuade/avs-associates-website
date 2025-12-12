@@ -25,9 +25,9 @@ export function Footer() {
                 <h3 className="font-semibold">Address</h3>
               </div>
               <p className="text-sm text-primary-foreground/80">
-                Shop ONE, Krishna Building,Kalina Junction,
+                AVS Associates, Office NO 16/128 Anand Nagar, 
                 <br />
-                Santacruz (E), Mumbai-400098
+                Near Vakola Police Station, Santacruz (E), Mumbai-400055
               </p>
             </div>
             <div className="flex flex-col items-center gap-2 md:items-start">
@@ -35,7 +35,7 @@ export function Footer() {
                 <Phone className="h-5 w-5" />
                 <h3 className="font-semibold">Phone</h3>
               </div>
-              <p className="text-sm text-primary-foreground/80">022-67859101</p>
+              <p className="text-sm text-primary-foreground/80">+91-8828195646</p>
             </div>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
@@ -45,7 +45,7 @@ export function Footer() {
                 <h3 className="font-semibold">Email</h3>
               </div>
               <p className="text-sm text-primary-foreground/80">
-                contact@avsassociates.asia
+               vikram@avsassociatesindia.com
               </p>
             </div>
             <div className="flex flex-col items-center gap-2 md:items-start">
